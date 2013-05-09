@@ -1,12 +1,14 @@
 /**
  * メッセージクラス
  * @class
- * @property {jQuery Object} div divタグの参照
+ * @property {object} div メッセージウィンドウへの参照
+ * @property {object} prompt 続きを読むときに表示されるAボタンのアイコン
+ * @property {object} downer 下画面の参照。タッチして続きを読ませる。
  */
 var Message = function() {
 	this.div = $('#message');
 	this.prompt = $('#prompt');
-	this.scene = $('#downer');
+	this.downer = $('#downer');
 };
 
 /**

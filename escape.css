@@ -8,14 +8,6 @@
 	background-color: black;
 }
 
-.downer {
-	position: relative;
-	left: 0px;
-	top: 0px;
-	width: 320px;
-	height: 212px;
-}
-
 #item_list {
 	position: relative;
 	top: 12px;
@@ -102,24 +94,58 @@
 	display: none;
 }
 
-#bedroom {
-	background-image: url('img/bedroom.png');
-}
 
-#passage {
-	background-image: url('img/passage.png');
+#downer>div{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 320px;
+	height: 212px;
 	display: none;
 }
 
-.invisible {
-	background-color: blue;
-	opacity: 0.5;
+#armoire1 {
+	background-image: url('img/armoire1.png');
 }
-
-#to_passage {
-	position: absolute;
-	top: 186px;
-	left: 0px;
-	width: 320px;
-	height: 25px;
+#armoire2 {
+	background-image: url('img/armoire2.png');
+}
+#armoire3 {
+	background-image: url('img/armoire3.png');
+}
+#balcony {
+	background-image: url('img/balcony.png');
+}
+#bedroom1 {
+	background-image: url('img/bedroom1.png');
+}
+#bedroom2 {
+	background-image: url('img/bedroom2.png');
+}
+#doorknob {
+	background-image: url('img/doorknob.png');
+}
+#kitchen {
+	background-image: url('img/kitchen.png');
+}
+#living1 {
+	background-image: url('img/living1.png');
+}
+#living2 {
+	background-image: url('img/living2.png');
+}
+#lounge {
+	background-image: url('img/lounge.png');
+}
+#passage1 {
+	background-image: url('img/passage1.png');
+}
+#passage2 {
+	background-image: url('img/passage2.png');
+}
+#toilet {
+	background-image: url('img/toilet.png');
+}
+#tv {
+	background-image: url('img/tv.png');
 }
