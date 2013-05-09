@@ -1,17 +1,15 @@
-/**
- * 脱出ゲームのランタイム
- * @file
- */
-var ItemList = function() {}
-
-// エントリポイント
 $(function() {
-//	var scene = json.room;
+	var bedroom = $('#bedroom');
+	var passage = $('#passage');
+	var toPassage = $('#to_passage');
 	
-	// イベントの配置
-//	var downer = $('#downer');
-//	var objects = scene.objects;
-//	for(var i = 0; i < objects.length; i++) {
-//		var object = objects[i];
-//	}
+	toPassage.click(function() {
+		bedroom.css('display', 'none');
+		passage.css('display', 'block');
+	});
+	
+	passage.click(function() {
+		passage.css('display', 'none');
+		bedroom.css('display', 'block');
+	});
 });

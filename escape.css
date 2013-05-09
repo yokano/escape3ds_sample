@@ -9,6 +9,9 @@
 }
 
 .downer {
+	position: relative;
+	left: 0px;
+	top: 0px;
 	width: 320px;
 	height: 212px;
 }
@@ -103,27 +106,20 @@
 	background-image: url('img/bedroom.png');
 }
 
-#armoire {
-	background-image: url('img/armoire.png');
-	display: none;
-}
-
-#living {
-	background-image: url('img/living.png');
-	display: none;
-}
-
-#lounge {
-	background-image: url('img/lounge.png');
-	display: none;
-}
-
 #passage {
 	background-image: url('img/passage.png');
 	display: none;
 }
 
-#toilet {
-	background-image: url('img/toilet.png');
-	display: none;
+.invisible {
+	background-color: blue;
+	opacity: 0.5;
+}
+
+#to_passage {
+	position: absolute;
+	top: 186px;
+	left: 0px;
+	width: 320px;
+	height: 25px;
 }

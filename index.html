@@ -8,7 +8,6 @@
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="message.js"></script>
 		<script src="runtime.js"></script>
-		<script src="json.js"></script>
 	</head>
 	<body>
 		<div id="upper">
@@ -24,16 +23,14 @@
 				<div class="item"></div>
 				<div class="item"></div>
 			</div>
-			<div id="message">
-			</div>
+			<div id="message"></div>
 			<div id="prompt"></div>
 		</div>
 		
-		<div id="bedroom" class="downer"></div>
-		<div id="armoire" class="downer"></div>
-		<div id="living" class="downer"></div>
-		<div id="lounge" class="downer"></div>
+		<div id="bedroom" class="downer">
+			<div class="invisible" id="to_passage"></div>
+		</div>
 		<div id="passage" class="downer"></div>
-		<div id="toilet" class="downer"></div>
+		
 	</body>
 </html>
