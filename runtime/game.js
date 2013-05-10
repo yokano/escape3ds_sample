@@ -14,28 +14,12 @@ var Game = function() {
 	this.switches = [];
 	this.variables = {};
 	this.message = new Message();
-	var sceneIdList = [
-		'armoire1',
-		'armoire2',
-		'armoire3',
-		'balcony',
-		'bedroom1',
-		'bedroom2',
-		'doorknob',
-		'kitchen',
-		'living1',
-		'living2',
-		'lounge',
-		'passage1',
-		'passage2',
-		'toilet',
-		'tv'
-	];
 	this.scenes = {};
-	for(var i = 0; i < sceneIdList.length; i++) {
-		this.scenes[sceneIdList[i]] = new Scene(sceneIdList[i]);
+	for(var i = 0; i < config.scenes.length; i++) {
+		var scene = config.scenes[i];
+		this.scenes[scene.id] = new Scene(scene.id, scene.events);
 	}
-	this.currentScene = this.scenes.bedroom1;
+	this.currentScene = this.scenes[config.start];
 	this.currentScene.show();
 };
 
@@ -52,7 +36,3 @@ Game.prototype.changeScene = function(sceneId) {
 	this.currentScene.show();
 	this.currentScene.enter();
 };
-
-$(function() {
-	var game = new Game();
-});

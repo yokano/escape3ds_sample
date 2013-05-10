@@ -6,9 +6,11 @@
 		<link rel="stylesheet" href="escape.css"></link>
 		<title>脱出ゲームサンプル</title>
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="config.js"></script>
 		<script src="runtime/message.js"></script>
 		<script src="runtime/scene.js"></script>
 		<script src="runtime/game.js"></script>
+		<script src="main.js"></script>
 	</head>
 	<body>
 		<!-- 上画面 -->
@@ -36,7 +38,10 @@
 			<div id="armoire2"></div>
 			<div id="armoire3"></div>
 			<div id="balcony"></div>
-			<div id="bedroom1"></div>
+			<div id="bedroom1">
+				<div id="to_passage1" class="debug_area"></div>
+				<div id="bed" class="debug_area"></div>
+			</div>
 			<div id="bedroom2"></div>
 			<div id="doorknob"></div>
 			<div id="kitchen"></div>

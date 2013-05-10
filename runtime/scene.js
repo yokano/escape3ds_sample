@@ -4,9 +4,19 @@
  * 下画面はすべてこのクラスを継承すること
  * @class
  * @param {string} HTMLと関連づいたシーンのid
+ * @param {object} イベントidとfunctionのkey-valueオブジェクト
+ * イベントがタッチされたあらidに関連付けられたfunctionが実行される
+ * @property {object} html 背景のdivタグの参照
+ * @property {array} events イベントオブジェクトリスト
  */
-var Scene = function(id) {
+var Scene = function(id, events) {
 	this.html = $('#' + id);
+	this.events = {};
+	for(var i = 0; i < events.length; i++) {
+		var event = events[i];
+		this.events[event.id] = this.html.find('#' + event.id);
+		this.events[event.id].on('click', event.click);
+	}
 };
 
 /**

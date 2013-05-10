@@ -103,6 +103,9 @@
 	height: 212px;
 	display: none;
 }
+#downer>div>* {
+	position: relative;
+}
 
 #armoire1 {
 	background-image: url('img/armoire1.png');
@@ -118,6 +121,18 @@
 }
 #bedroom1 {
 	background-image: url('img/bedroom1.png');
+}
+#bedroom1>#to_passage1 {
+	left: 0px;
+	top: 182px;
+	width: 290px;
+	height: 30px;
+}
+#bedroom1>#bed {
+	left: 10px;
+	top: 10px;
+	width: 100px;
+	height: 100px;
 }
 #bedroom2 {
 	background-image: url('img/bedroom2.png');
@@ -148,4 +163,9 @@
 }
 #tv {
 	background-image: url('img/tv.png');
+}
+
+.debug_area {
+	background-color: blue;
+	opacity: 0.5;
 }
